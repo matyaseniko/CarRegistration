@@ -16,12 +16,12 @@
 
 	$conn = new mysqli($serverName,$userName,$password,$dbName);
 
-	if($conn->connect_error){
+	if($conn->connect_error){ //conn=coneiune
 		die("Connection failed".$conn->connect_error);
 	}
 
 
-	$query=mysqli_query($conn,'SELECT * FROM masina');
+	$query=mysqli_query($conn,'SELECT * FROM masina'); //yuhu just testing
 ?> 
 	<table id="masina">
 		<tr> 
